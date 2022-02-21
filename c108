@@ -1,0 +1,10 @@
+from pandas.io.parsers.readers import read_csv
+import pandas as pd
+import plotly.figure_factory as ff 
+df = pd.read_csv("/dataC108.csv")
+fig = ff.create_distplot([df['Height(Inches)'].tolist()],["Height"],show_hist = False)
+fig.show() 
+
+
+//https://raw.githubusercontent.com/whitehatjr/Normal-Distribution/master/data.csv
+//Copy and paste this link to see the data to this solution
